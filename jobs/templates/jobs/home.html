@@ -1,6 +1,6 @@
+{% load staticfiles %}
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -58,7 +58,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link" href="#">Twitter</a>
-                    <a class="nav-item nav-link" href="#">Resume</a>
+                    <a class="nav-item nav-link" href="{% static 'resume.pdf' %}">Resume</a>
                     <a class="nav-item nav-link" href="{% url 'all_blogs' %}">Blog</a>
                 </div>
             </div>
@@ -74,6 +74,7 @@
                 <p>
                     <a href="mailto:ckilcioglu@gmail.com" class="btn btn-primary my-2">email me</a>
                 </p>
+                <img src="{% static 'caglar.jpeg' %}" height=300 />
             </div>
         </section>
 
